@@ -5,7 +5,7 @@ package
 	import flash.display.StageScaleMode;
 	import flash.events.Event;
 	
-	[SWF(width="1024",height="768",frameRate="60", backgroundColor="#000000")]
+	[SWF(width="480",height="800",frameRate="30", backgroundColor="#ffffff")]
 	public class Main extends Sprite
 	{
 		public function Main()
@@ -30,7 +30,7 @@ package
 		
 		protected function initialize():void
 		{
-			var main:Sprite = new MainOriginal() as Sprite;
+			var main:MainOriginal = new MainOriginal(stage);
 			stage.addChildAt(main,0);
 		}
 	}
